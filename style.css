@@ -1,0 +1,222 @@
+body {
+    font-family: 'Times New Roman', Arial;
+    color: black;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    overflow: hidden;
+}
+/*Nav bar*/
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 244, 244);
+    width: 100%;
+    margin-top: 5px;
+    border-top: 3px solid blue;
+    border-bottom: 1px solid gray;
+}
+
+nav a {
+    font-size: 20px;
+    color: gray;
+    text-decoration: none;
+    padding: 30px;
+    text-align: center;
+}
+
+nav a:hover {
+    cursor: pointer;
+    color: rgb(70, 70, 233);
+}
+/*Nav bar*/
+
+/*Side bar*/
+
+.sidebar-pfp-content {
+    background-color: rgb(245, 244, 244);
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 300px;
+    top: 93px;
+    bottom: 0;
+    border-right: 1px solid gray;
+    z-index: 2;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border-bottom: 2px solid gray;
+}
+.name {
+    font-size: 25px;
+}
+
+.name, .occupation, .email {
+    margin-bottom: -5px;
+}
+
+.occupation {
+    font-size: 18px;
+}
+
+.email a {
+    font-size: 15px;
+    text-decoration: none;
+}
+/*Side bar*/
+
+/*Main Body*/
+
+main {
+    flex: 1;
+    max-width: 70%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: 400px;
+    max-width: auto; 
+    word-wrap: break-word;
+    
+}
+
+main h1{
+    margin-bottom: 70px;
+}
+/*Main Body*/
+
+/*About page*/
+
+.about-me-text {
+    max-width: 580px;
+    margin-left: 0;
+    margin-right: auto;
+}
+/*About page*/
+
+/*Skills page*/
+
+.progress-container {
+    width: 70%;
+    height: 15px; 
+    background-color: lightgray;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    border: 1px solid gray;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: rgb(22, 134, 238);
+    border-radius: 10px;
+}
+
+.progress-label {
+    text-align: start;
+}
+/*Skills page*/
+
+/*Experience page*/
+
+.experience-item,
+.position {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -10px;
+}
+
+.date {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.exp {
+    padding-bottom: 30px; 
+}
+
+.resume {
+    color: gray;
+    margin-top: 80px;
+}
+
+.resume a {
+    text-decoration: none;
+}
+/*Experience page*/
+
+/*Interests page*/
+
+.interests-list {
+    list-style-type: none;
+    list-style-type: '-';
+}
+
+.interests-list li {
+    padding-left: 10px;
+    margin-top: 20px;
+}
+/*Interests page*/
+
+/*Education page*/
+.education-program,
+.campus {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -10px;
+}
+
+.date {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.education-page {
+    padding-bottom: 30px; 
+}
+
+.credentials {
+    color: gray;
+    margin-top: 80px;
+}
+/*Education page*/
+
+/*Footer*/
+
+footer {
+    text-align: center;
+    border-top: 1px solid gray;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+}
+/*Footer*/
+
+/* Responsiveness */
+@media only screen and (min-width: 800px) {
+    main {
+        max-width: 70%;
+        margin-left: 400px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    main {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .sidebar-pfp-content {
+        width: 100%;
+        position: relative;
+        margin-left: 0;
+        border-right: none;
+    }
+}
+/* Responsiveness */
+
